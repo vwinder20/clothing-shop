@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --port 4000 -w db.json",
+    "tw": "npx tailwindcss -i ./src/input.css -o ./src/App.css --watch"
   },
   "dependencies": {
     "json-server": "^0.17.0",
