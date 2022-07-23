@@ -1,7 +1,7 @@
 # TECH STACK
 
 - React JS
-- Tailwind
+- Tailwind CSS
 - Vite
 
 For testing server(db.json), use json-server.
