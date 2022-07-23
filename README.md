@@ -4,4 +4,5 @@
 - Tailwind CSS
 - Vite
 - Firebase
-  For testing server(db.json), use json-server.
+
+// For testing server(db.json), use json-server.
