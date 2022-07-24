@@ -1,21 +1,27 @@
 // Hooks and utils
-import { useEffect, useState } from "react";
-CategoryItem;
+import { Routes, Route, Outlet } from "react-router-dom";
 // Importing styles
 import "./App.css";
-import CategoryItem from "./components/CategoryItem";
-import Directory from "./components/Directory";
 // Importing components
-
+import Home from "./routes/Home";
+const Navigation = () => {
+  return (
+    <div className="w-full flex flex-col items-center">
+      <div>
+        <h1>I am the navigation bar</h1>
+      </div>
+      <Outlet />
+    </div>
+  );
+};
 const App = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch(" http://localhost:4000/categories")
-      .then((response) => response.json())
-      .then((respData) => setData(respData));
-  }, []);
-
-  return <Directory data={data} />;
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;
