@@ -11,8 +11,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      minWidth: {
-        30: "30%",
+      fontFamily: {
+        cormorant: ["Cormorant SC", "serif"],
       },
     },
   },

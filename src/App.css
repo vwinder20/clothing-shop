@@ -590,16 +590,24 @@ video {
   height: 1.25rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-full {
   width: 100%;
 }
 
-.min-w-30 {
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.min-w-\[30\%\] {
   min-width: 30%;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
+}
+
+.min-w-\[40\%\] {
+  min-width: 40%;
 }
 
 .flex-auto {
@@ -664,6 +672,10 @@ video {
 .py-\[25px\] {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.font-cormorant {
+  font-family: Cormorant SC, serif;
 }
 
 .text-base {
