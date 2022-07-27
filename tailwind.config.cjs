@@ -8,6 +8,7 @@ module.exports = {
     // Components folder
     "./src/components/CategoryItem/CategoryItem.jsx",
     "./src/components/Directory/Directory.jsx",
+    "./src/routes/Navigation/Navigation.jsx",
   ],
   theme: {
     extend: {

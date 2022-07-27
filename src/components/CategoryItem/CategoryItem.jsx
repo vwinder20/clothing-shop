@@ -4,7 +4,7 @@ const CategoryItem = ({ category }) => {
     <div
       className="flex min-w-[30%] h-60 
       flex-auto justify-center border border-solid
-    border-black mt-0 mr-2 mb-3 items-center overflow-hidden group hover:cursor-pointer"
+    border-black items-center overflow-hidden group hover:cursor-pointer"
     >
       <div
         className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-all duration-1000 ease-in-out "

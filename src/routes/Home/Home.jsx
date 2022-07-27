@@ -5,7 +5,7 @@ import Directory from "../../components/Directory";
 const Home = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(" http://localhost:4000/categories")
+    fetch(" http://localhost:4001/categories")
       .then((response) => response.json())
       .then((respData) => setData(respData));
   }, []);

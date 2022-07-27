@@ -4,14 +4,13 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
 // Importing components
 import Home from "./routes/Home";
-const Navigation = () => {
+import Navigation from "./routes/Navigation";
+
+const Shop = () => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div>
-        <h1>I am the navigation bar</h1>
-      </div>
-      <Outlet />
-    </div>
+    <section>
+      <h1>Shop page</h1>
+    </section>
   );
 };
 const App = () => {
@@ -19,6 +18,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
       </Route>
     </Routes>
   );

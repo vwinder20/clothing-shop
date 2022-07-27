@@ -2,8 +2,8 @@ import CategoryItem from "../CategoryItem";
 const Directory = ({ data }) => {
   return (
     <div
-      className="flex flex-wrap justify-between w-[90%] 
-        flex-col sm:flex-row font-cormorant"
+      className="flex flex-wrap justify-between w-full 
+        flex-col sm:flex-row font-cormorant gap-2"
     >
       {data.map((category) => (
         <CategoryItem category={category} key={category.id} />
