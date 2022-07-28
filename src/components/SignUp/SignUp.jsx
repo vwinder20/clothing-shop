@@ -1,8 +1,11 @@
-import { async } from "@firebase/util";
 import React from "react";
 import { useState } from "react";
-import { createAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase";
+import {
+  createAuthUserWithEmailAndPassword,
+  createUserDocumentFromAuth,
+} from "../../utils/firebase/firebase";
 
+import FormInput from "../FormInput";
 const defaultFormFields = {
   displayName: "",
   email: "",
@@ -16,11 +19,23 @@ const SignUp = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (password === confirmPassword) {
-      await createAuthUserWithEmailAndPassword(email, password);
-      console.log("User has been created");
-    } else {
-      console.log("Password does not match!");
+    if (password !== confirmPassword) {
+      alert("Password does not match");
+      return;
+    }
+
+    try {
+      const { user } = await createAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+
+      await createUserDocumentFromAuth(user, { displayName });
+      setFormFields(defaultFormFields);
+    } catch (error) {
+      if (error.code === "auth/email-already-in-use") {
+        alert("This accound already exist! Sing in!");
+      }
     }
   };
   const handleChange = (event) => {
@@ -28,11 +43,14 @@ const SignUp = () => {
     setFormFields({ ...formFields, [name]: value });
   };
   return (
-    <div>
-      <h1>Sing up with email and password</h1>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <label>DisplayName</label>
-        <input
+    <div className="flex flex-col items-center">
+      <h1 className="text-3xl mb-10">Sing up</h1>
+      <form
+        className="flex flex-col gap-10 p-20 bg-white shadow-lg rounded-3xl shadow-black/30"
+        onSubmit={handleSubmit}
+      >
+        <FormInput
+          label="Display Name"
           required
           type="text"
           onChange={handleChange}
@@ -40,8 +58,8 @@ const SignUp = () => {
           value={displayName}
         />
 
-        <label>Email</label>
-        <input
+        <FormInput
+          label="Email"
           required
           type="email"
           onChange={handleChange}
@@ -49,8 +67,8 @@ const SignUp = () => {
           value={email}
         />
 
-        <label>Password</label>
-        <input
+        <FormInput
+          label="Password"
           required
           type="password"
           onChange={handleChange}
@@ -58,15 +76,20 @@ const SignUp = () => {
           value={password}
         />
 
-        <label>Confirm Password</label>
-        <input
+        <FormInput
+          label="Confirm Password"
           required
           type="password"
           onChange={handleChange}
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sing Up</button>
+        <button
+          className="text-xl border p-5 rounded-xl border-black"
+          type="submit"
+        >
+          Sing Up
+        </button>
       </form>
     </div>
   );

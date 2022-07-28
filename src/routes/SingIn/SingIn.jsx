@@ -4,7 +4,6 @@ import {
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase";
 import SignUp from "../../components/SignUp";
-import { useState } from "react";
 
 const SingIn = () => {
   const logGoogleUser = async () => {
@@ -13,9 +12,11 @@ const SingIn = () => {
   };
 
   return (
-    <div>
-      <h1>Sing In page</h1>
-      <button onClick={logGoogleUser}>Sign In with Google</button>
+    <div className="flex w-full justify-evenly mt-20">
+      <div>
+        <h1>Sing In with Google</h1>
+        <button onClick={logGoogleUser}>Sign In</button>
+      </div>
       <SignUp />
     </div>
   );
