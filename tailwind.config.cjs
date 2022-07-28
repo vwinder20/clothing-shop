@@ -12,6 +12,7 @@ module.exports = {
     "./src/components/SignUp/SignUp.jsx",
     "./src/routes/SingIn/SingIn.jsx",
     "./src/components/FormInput/FormInput.jsx",
+    "./src/components/Button/Button.jsx",
   ],
   theme: {
     extend: {

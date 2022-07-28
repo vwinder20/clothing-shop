@@ -6,6 +6,7 @@ import {
 } from "../../utils/firebase/firebase";
 
 import FormInput from "../FormInput";
+import Button from "../Button/Button";
 const defaultFormFields = {
   displayName: "",
   email: "",
@@ -43,12 +44,10 @@ const SignUp = () => {
     setFormFields({ ...formFields, [name]: value });
   };
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-3xl mb-10">Sing up</h1>
-      <form
-        className="flex flex-col gap-10 p-20 bg-white shadow-lg rounded-3xl shadow-black/30"
-        onSubmit={handleSubmit}
-      >
+    <div className="flex flex-col">
+      <h1 className="text-3xl mb-1 ">I do not have an account</h1>
+      <p className="mb-10">Sing up with your email and password</p>
+      <form className="flex flex-col gap-10 bg-white " onSubmit={handleSubmit}>
         <FormInput
           label="Display Name"
           required
@@ -84,12 +83,9 @@ const SignUp = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button
-          className="text-xl border p-5 rounded-xl border-black"
-          type="submit"
-        >
+        <Button buttonType="inverted" type="submit">
           Sing Up
-        </button>
+        </Button>
       </form>
     </div>
   );
