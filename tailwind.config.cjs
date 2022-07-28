@@ -9,6 +9,7 @@ module.exports = {
     "./src/components/CategoryItem/CategoryItem.jsx",
     "./src/components/Directory/Directory.jsx",
     "./src/routes/Navigation/Navigation.jsx",
+    "./src/components/SignUp/SignUp.jsx",
   ],
   theme: {
     extend: {
