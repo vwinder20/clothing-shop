@@ -10,11 +10,16 @@ module.exports = {
     "./src/components/Directory/Directory.jsx",
     "./src/routes/Navigation/Navigation.jsx",
     "./src/components/SignUp/SignUp.jsx",
-    "./src/routes/SingIn/SingIn.jsx",
+    "./src/components/SignIn/SignIn.jsx",
+    "./src/routes/Authentication/Authentication.jsx",
     "./src/components/FormInput/FormInput.jsx",
     "./src/components/Button/Button.jsx",
   ],
   theme: {
+    // screens: {
+    //   mobile: "320px",
+    //   tablet: "768",
+    // },
     extend: {
       fontFamily: {
         cormorant: ["Cormorant SC", "serif"],
