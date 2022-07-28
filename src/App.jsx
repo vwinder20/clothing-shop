@@ -6,7 +6,7 @@ import "./App.css";
 import Home from "./routes/Home";
 import Navigation from "./routes/Navigation";
 import Shop from "./routes/Shop";
-import SingIn from "./routes/SingIn";
+import Authentication from "./routes/Authentication";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SingIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );

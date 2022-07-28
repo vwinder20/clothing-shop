@@ -44,7 +44,7 @@ const SignUp = () => {
     setFormFields({ ...formFields, [name]: value });
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <h1 className="text-3xl mb-1 ">I do not have an account</h1>
       <p className="mb-10">Sing up with your email and password</p>
       <form className="flex flex-col gap-10 bg-white " onSubmit={handleSubmit}>
@@ -83,8 +83,8 @@ const SignUp = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <Button buttonType="inverted" type="submit">
-          Sing Up
+        <Button buttonType="default" type="submit">
+          SING UP
         </Button>
       </form>
     </div>
