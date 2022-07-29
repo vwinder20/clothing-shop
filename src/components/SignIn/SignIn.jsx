@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   createUserDocumentFromAuth,
   signInWithPopupFunc,
@@ -8,6 +8,7 @@ import {
 
 import FormInput from "../FormInput";
 import Button from "../Button/Button";
+import { UserContext } from "../../contexts/UserContext";
 const defaultFormFields = {
   email: "",
   password: "",
@@ -17,15 +18,17 @@ const SignIn = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
+  const { setCurrentUser } = useContext(UserContext);
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await singInAuthUserWithEmailAndPassword(
+      const { user } = await singInAuthUserWithEmailAndPassword(
         email,
         password
       );
-      console.log(response);
+      setCurrentUser(await user);
+      console.log(currentUser);
       setFormFields(defaultFormFields);
     } catch (error) {
       switch (error.code) {
