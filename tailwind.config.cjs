@@ -18,6 +18,7 @@ module.exports = {
     "./src/routes/Shop/Shop.jsx",
     "./src/components/CartIcon",
     "./src/components/CartDropdown/CartDropdown.jsx",
+    "./src/components/CartItem/CartItem.jsx",
   ],
   theme: {
     // screens: {
