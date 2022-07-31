@@ -25,5 +25,61 @@
       "title": "MENS",
       "imageUrl": "/images/categories/men.png"
     }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "name": "Brown Brim",
+      "imageUrl": "/images/shop/brown-brim.png",
+      "price": 25
+    },
+    {
+      "id": 2,
+      "name": "Blue Beanie",
+      "imageUrl": "/images/shop/blue-beanie.png",
+      "price": 18
+    },
+    {
+      "id": 3,
+      "name": "Brown Cowboy",
+      "imageUrl": "/images/shop/brown-cowboy.png",
+      "price": 35
+    },
+    {
+      "id": 4,
+      "name": "Grey Brim",
+      "imageUrl": "/images/shop/grey-brim.png",
+      "price": 25
+    },
+    {
+      "id": 5,
+      "name": "Green Beanie",
+      "imageUrl": "/images/shop/green-beanie.png",
+      "price": 18
+    },
+    {
+      "id": 6,
+      "name": "Palm Tree Cap",
+      "imageUrl": "/images/shop/palm-tree-cap.png",
+      "price": 14
+    },
+    {
+      "id": 7,
+      "name": "Red Beanie",
+      "imageUrl": "/images/shop/red-beanie.png",
+      "price": 18
+    },
+    {
+      "id": 8,
+      "name": "Wolf Cap",
+      "imageUrl": "/images/shop/wolf-cap.png",
+      "price": 14
+    },
+    {
+      "id": 9,
+      "name": "Blue Snapback",
+      "imageUrl": "/images/shop/blue-snapback.png",
+      "price": 16
+    }
   ]
 }
