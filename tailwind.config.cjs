@@ -14,6 +14,8 @@ module.exports = {
     "./src/routes/Authentication/Authentication.jsx",
     "./src/components/FormInput/FormInput.jsx",
     "./src/components/Button/Button.jsx",
+    "./src/components/ProductCard/ProductCard.jsx",
+    "./src/routes/Shop/Shop.jsx",
   ],
   theme: {
     // screens: {
