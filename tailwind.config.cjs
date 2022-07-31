@@ -16,6 +16,8 @@ module.exports = {
     "./src/components/Button/Button.jsx",
     "./src/components/ProductCard/ProductCard.jsx",
     "./src/routes/Shop/Shop.jsx",
+    "./src/components/CartIcon",
+    "./src/components/CartDropdown/CartDropdown.jsx",
   ],
   theme: {
     // screens: {
@@ -24,7 +26,7 @@ module.exports = {
     // },
     extend: {
       fontFamily: {
-        cormorant: ["Cormorant SC", "serif"],
+        montseerat: ["Montserrat", "sans-serif"],
       },
     },
   },

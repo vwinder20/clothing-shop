@@ -2,7 +2,7 @@ import React from "react";
 
 const BUTTON_TYPE_CLASSES = {
   default:
-    "max-w-[50%] bg-black text-white hover:bg-white hover:text-black border-black",
+    "max-w-[100%] bg-black text-white hover:bg-white hover:text-black border-black",
   google: "bg-blue-500 text-white hover:bg-blue-400 border-blue-500",
   inverted: "bg-white text-black hover:bg-black hover:text-white border-black",
 };
