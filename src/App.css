@@ -418,7 +418,7 @@ video {
 }
 
 html {
-  font-family: Poppins, system-ui, sans-serif;
+  font-family: Cormorant SC, sans-serif;
 }
 
 *, ::before, ::after {
@@ -629,6 +629,10 @@ html {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
