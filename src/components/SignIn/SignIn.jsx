@@ -41,8 +41,7 @@ const SignIn = () => {
   };
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithPopupFunc();
-    await createUserDocumentFromAuth(user);
+    await signInWithPopupFunc();
   };
   const handleChange = (event) => {
     const { name, value } = event.target;

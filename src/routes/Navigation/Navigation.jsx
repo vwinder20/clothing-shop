@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import { useContext } from "react";
-import { UserContext } from "../../contexts/userContext";
+import { UserContext } from "../../contexts/UserContext";
 import { signOutUser } from "../../utils/firebase/firebase";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  useEffect(() => {
-    console.log(currentUser);
-    // TODO fix bug with fetching user-context, navigation context doesn't see currentUser data
-  }, []);
   return (
     <div className="max-w-6xl w-full items-center justify-center flex flex-col mx-5 sm:mx-10 lg:mx-20 ">
       <div className="flex justify-between w-full items-center mt-10 mb-10">
@@ -25,7 +21,9 @@ const Navigation = () => {
             <Link to="/contact">CONTACT</Link>
           </div>
           {currentUser ? (
-            <span onClick={signOutUser}>SIGN OUT</span>
+            <span className="cursor-pointer" onClick={signOutUser}>
+              SIGN OUT
+            </span>
           ) : (
             <div>
               <Link to="/auth">SIGN IN</Link>
