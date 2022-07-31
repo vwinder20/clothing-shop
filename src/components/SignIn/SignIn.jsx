@@ -28,10 +28,10 @@ const SignIn = () => {
       setFormFields(defaultFormFields);
     } catch (error) {
       switch (error.code) {
-        case "auth/worng-password":
+        case "auth/wrong-password":
           alert("Incorrect email or passowrd!");
           break;
-        case "auth/user-not-fount":
+        case "auth/user-not-found":
           alert("No user with this email!");
           break;
         default:
