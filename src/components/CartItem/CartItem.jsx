@@ -1,11 +1,16 @@
 import React from "react";
 
 const CartItem = ({ cartItem }) => {
-  const { name, quantity } = cartItem;
+  const { name, quantity, imageUrl, price } = cartItem;
   return (
-    <div>
-      <h2>{name}</h2>
-      <span>{quantity}</span>
+    <div className="flex justify-between">
+      <img className="w-[30%]" src={imageUrl} alt={`${name}`} />
+      <div className="flex flex-col items-center justify-center text-sm ml-3">
+        <span>{name}</span>
+        <span>
+          {quantity} X ${price}
+        </span>
+      </div>
     </div>
   );
 };
