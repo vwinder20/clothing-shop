@@ -619,20 +619,8 @@ html {
   margin-top: 0.5rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .flex {
@@ -679,14 +667,6 @@ html {
   height: 35px;
 }
 
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[30\%\] {
-  height: 30%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -699,20 +679,16 @@ html {
   width: 240px;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .w-\[45px\] {
   width: 45px;
 }
 
 .w-\[35px\] {
   width: 35px;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .min-w-\[30\%\] {
@@ -731,10 +707,6 @@ html {
   flex: 1 1 auto;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -749,10 +721,6 @@ html {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -883,13 +851,13 @@ html {
   line-height: 2rem;
 }
 
-.text-\[10px\] {
-  font-size: 10px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {
@@ -947,6 +915,32 @@ html {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #ffffff;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #63676b;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
 }
 
 .hover\:cursor-pointer:hover {
