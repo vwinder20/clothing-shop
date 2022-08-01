@@ -4,7 +4,7 @@ import Button from "../Button";
 import CartItem from "../CartItem";
 import { CartContext } from "../../contexts/CartContext";
 const CartDropdown = () => {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, setOpen } = useContext(CartContext);
   console.log(cartItems);
   return (
     <div className="left-[40%] top-[120%] absolute w-[240px] h-[340px] flex p-5 border flex-col border-black bg-white  z-10">
@@ -14,7 +14,9 @@ const CartDropdown = () => {
         ))}
       </div>
       <Link to="/checkout">
-        <Button buttonType="default">GO TO CHECKOUT</Button>
+        <Button onClick={() => setOpen(!open)} buttonType="default">
+          GO TO CHECKOUT
+        </Button>
       </Link>
     </div>
   );

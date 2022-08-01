@@ -34,13 +34,7 @@ const decreaseCount = (cartItems, product) => {
 };
 
 const removeFromCart = (cartItems, product) => {
-  const existingCartItem = cartItems.find(
-    (cartItem) => cartItem.id === product.id
-  );
-
-  if (existingCartItem) {
-    return cartItems.filter((cartItem) => cartItem.id !== product.id);
-  }
+  return cartItems.filter((cartItem) => cartItem.id !== product.id);
 };
 
 export const CartContext = createContext({
