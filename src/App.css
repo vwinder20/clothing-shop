@@ -595,6 +595,11 @@ html {
   margin-right: 1.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -621,6 +626,26 @@ html {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-\[50\%\] {
+  margin-left: 50%;
+}
+
+.ml-\[20\%\] {
+  margin-left: 20%;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .flex {
@@ -667,6 +692,22 @@ html {
   height: 35px;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[0\.5\] {
+  height: 0.5;
+}
+
+.h-\[0\.5px\] {
+  height: 0.5px;
+}
+
+.h-\[0\.3px\] {
+  height: 0.3px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -683,12 +724,36 @@ html {
   width: 30%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
 .w-\[45px\] {
   width: 45px;
 }
 
 .w-\[35px\] {
   width: 35px;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[25\%\] {
+  width: 25%;
 }
 
 .min-w-\[30\%\] {
@@ -707,12 +772,20 @@ html {
   flex: 1 1 auto;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -735,6 +808,10 @@ html {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -753,6 +830,10 @@ html {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .overflow-hidden {
@@ -854,6 +935,11 @@ html {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-\[10px\] {
