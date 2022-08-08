@@ -1,4 +1,4 @@
-import CategoryItem from "../CategoryItem";
+import DirectoryItem from "../DirectoryItem";
 const Directory = ({ data }) => {
   return (
     <div
@@ -6,7 +6,7 @@ const Directory = ({ data }) => {
         flex-col sm:flex-row gap-2"
     >
       {data.map((category) => (
-        <CategoryItem category={category} key={category.id} />
+        <DirectoryItem category={category} key={category.id} />
       ))}
     </div>
   );

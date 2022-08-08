@@ -1,7 +1,9 @@
-const CategoryItem = ({ category }) => {
+import { Link } from "react-router-dom";
+const Directory = ({ category }) => {
   const { imageUrl, title } = category;
   return (
-    <div
+    <Link
+      to={`shop/${title.toLowerCase()}`}
       className="flex min-w-[30%] h-60 
       flex-auto justify-center border border-solid
     border-black items-center overflow-hidden group hover:cursor-pointer"
@@ -18,8 +20,8 @@ const CategoryItem = ({ category }) => {
         <h2 className="font-bold ">{title}</h2>
         <p className="font-light text-base ">Shop Now</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
-export default CategoryItem;
+export default Directory;

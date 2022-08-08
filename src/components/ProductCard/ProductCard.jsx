@@ -5,9 +5,9 @@ const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
   const { addItemToCart } = useContext(CartContext);
   return (
-    <div className="relative flex flex-col h-50 w-full items-center hover:opacity-80">
+    <div className="relative flex flex-col h-full w-full items-center hover:opacity-80">
       <img
-        className="object-cover w-full h-[95%] bg-no-repeat bg-cover"
+        className="object-cover w-full min-h-[100%] bg-cover"
         src={imageUrl}
         alt="#"
       />

@@ -12,11 +12,14 @@ const Category = () => {
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
   return (
-    <div className="grid grid-cols-3 gap-5">
-      {products &&
-        products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+    <div className="flex flex-col items-center">
+      <h2 className="text-2xl mb-5">{category.toUpperCase()}</h2>
+      <div className="grid grid-cols-3 gap-5">
+        {products &&
+          products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+      </div>
     </div>
   );
 };
