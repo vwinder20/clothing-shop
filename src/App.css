@@ -582,6 +582,10 @@ html {
   top: 120%;
 }
 
+.bottom-\[8px\] {
+  bottom: 8px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -632,6 +636,10 @@ html {
   margin-top: 1.25rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -656,10 +664,6 @@ html {
   height: 60px;
 }
 
-.h-\[95\%\] {
-  height: 95%;
-}
-
 .h-\[340px\] {
   height: 340px;
 }
@@ -670,6 +674,22 @@ html {
 
 .h-\[0\.3px\] {
   height: 0.3px;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.min-h-\[100\%\] {
+  min-height: 100%;
 }
 
 .w-full {
@@ -694,6 +714,18 @@ html {
 
 .w-\[20\%\] {
   width: 20%;
+}
+
+.w-\[45px\] {
+  width: 45px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .min-w-\[30\%\] {
@@ -829,10 +861,6 @@ html {
   background-position: center;
 }
 
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -880,6 +908,14 @@ html {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {

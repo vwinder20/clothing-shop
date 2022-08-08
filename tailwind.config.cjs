@@ -6,7 +6,7 @@ module.exports = {
     "./src/main.jsx",
 
     // Components folder
-    "./src/components/CategoryItem/CategoryItem.jsx",
+    "./src/components/DirectoryItem/DirectoryItem.jsx",
     "./src/components/Directory/Directory.jsx",
     "./src/routes/Navigation/Navigation.jsx",
     "./src/components/SignUp/SignUp.jsx",
