@@ -21,6 +21,8 @@ module.exports = {
     "./src/components/CartItem/CartItem.jsx",
     "./src/routes/Checkout/Checkout.jsx",
     "./src/components/CheckoutItem/CheckoutItem.jsx",
+    "./src/components/CategoryPreview/CategoryPreview.jsx",
+    "./src/routes/Category/Category.jsx",
   ],
   theme: {
     // screens: {
